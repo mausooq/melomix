@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+            background-color: antiquewhite;
+            font-family: 'Poppins', sans-serif;
+            background: #642B73;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+        
+            
+
+}
+.nav{
+    background-color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav ul li{
+    padding:0px 12px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding:0px 10px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.logo img{
+    width: 44px;
+    padding:0px 12px;
+
+}
+.container{
+    min-height: 71vh;
+    width: 80vw;
+    margin: 24px auto;
+    border-radius: 12px;
+    background-image: url('covers/peakpx.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.heading{
+    color: white;
+    padding: 12px 12px 0px 25px;
+}
+
+.item{
+    height: 40px;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 8px 0px;
+    opacity:0.6;
+    font-weight: bolder;
+}
+.item img{
+    width: 40px;
+    margin: 0px 12px;
+    border-radius: 50px;
+    }
+.time{
+    margin: 0px 22px;
+}
+.songlist{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color:black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0;
+}
+#playtrack{
+    width:80vw;
+    cursor: pointer;
+}
+.icons i{
+    margin: 10px;
+    cursor: pointer;
+}
+.songinfo{
+    position: absolute;
+    left: 8vw;
+}
+.songinfo img{
+    opacity: 0;
+    transition:opacity 0.4s ease-in;
+}
+.songitemplay{
+    cursor: pointer;
+}
